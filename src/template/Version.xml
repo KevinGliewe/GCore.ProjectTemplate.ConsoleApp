@@ -1,0 +1,31 @@
+<Project>
+  <!-- Project version properties (follows semantic versioning 2.0.0 rules) -->
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>rc</VersionSuffix>
+    <Company></Company>
+    <Copyright></Copyright>
+    <Product>GCore.ProjectTemplate.ConsoleApp</Product>
+  </PropertyGroup>
+
+  <!-- Suppress default attributes created by the compiler to prevent duplicate attribute errors -->
+  <PropertyGroup>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+  </PropertyGroup>
+<!--
+  <Target Name="GenerateVersionInfo" BeforeTargets="CoreCompile">
+    <Exec Command="dotnet tool restore" />
+    <Exec Command="dotnet tool run rw-project-version -s=git -t=cs -v=$(VersionPrefix) -m=$(VersionSuffix)" />
+
+    <ItemGroup>
+      <Compile Remove="Properties\VersionInfo.cs" />
+      <Compile Include="Properties\VersionInfo.cs" />
+    </ItemGroup>
+  </Target>
+-->
+</Project>
