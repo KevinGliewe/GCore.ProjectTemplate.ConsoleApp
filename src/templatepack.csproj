@@ -7,7 +7,7 @@
     <Title>GConsole</Title>
     <Authors>Kevin Gliewe</Authors>
     <Description>Console Template with a lot of fluff.</Description>
-    <PackageTags>dotnet-new;templates;contoso</PackageTags>
+    <PackageTags>dotnet-new;templates;gcore</PackageTags>
 
     <TargetFramework>netstandard2.0</TargetFramework>
 
