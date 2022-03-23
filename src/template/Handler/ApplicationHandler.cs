@@ -1,5 +1,5 @@
 using System;
-using Anotar.Serilog;
+using Serilog;
 
 namespace GCore.ProjectTemplate.ConsoleApp.Handler {
     public class ApplicationHandler {
@@ -13,14 +13,14 @@ namespace GCore.ProjectTemplate.ConsoleApp.Handler {
 
         public void Start()
         {
-            LogTo.Information("ApplicationHandler::Start()");
+            Log.Information("ApplicationHandler::Start()");
 
             _instanceHandler.OnAction();
         }
 
         public void Stop()
         {
-            LogTo.Information("ApplicationHandler::Stop()");
+            Log.Information("ApplicationHandler::Stop()");
         }
     }
 }
